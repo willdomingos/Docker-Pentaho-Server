@@ -26,7 +26,7 @@ _**Obs. também é possível:**_
 ## Conjunto de comandos docker / compose
 
 ### build (cria imagem)
-docker build -t lpaschoal/pentaho_server:9.0 .
+docker build -t [nome_autor]/pentaho_server:[versão] .
 
 **_Usando compose:_** 
 > docker-compose build
@@ -39,7 +39,7 @@ docker build -t lpaschoal/pentaho_server:9.0 .
 >  - docker logs --follow (container_id)
 
 ### run primeira vez (cria container)
-> docker run -p 127.0.0.1:8081:8080 lpaschoal/pentaho_server:9.0 
+> docker run -p 127.0.0.1:8081:8080 [nome_autor]/pentaho_server:[versão]
 
 **_Usando compose:_** 
 > docker-compose up
@@ -60,4 +60,4 @@ docker build -t lpaschoal/pentaho_server:9.0 .
 > docker-compose stop
 
 ### Customizar container com confs e depois gerar uma imagem (snapshot)
-> docker commit (container_id)  lpaschoal/pentaho_server_snapshot:2.0
+> docker commit (container_id)  [nome_autor]/pentaho_server_snapshot:2.0
